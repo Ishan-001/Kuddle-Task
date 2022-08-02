@@ -19,4 +19,23 @@ The app contains two files :
 - `Classes.java` contains the main class for storing classes and their attributes like ``currentUsers``, ``currentSlots``, etc.
 
 The `Classes.java` contains methods to check if user can cancel a class, join a class, check if a class is full, update the queue, etc.
-Checkout the 'outputs' folder for the implementation of the app.
+
+## Implementation
+
+- To add a class, input the class details like ``Name``, ``totalSlots``, etc.
+
+<img src="https://github.com/Ishan-001/Kuddle-Task/blob/main/outputs/add-class.PNG">
+
+- To join a class, input your ``userName`` and the ``className`` you want to join.
+
+<img src="https://github.com/Ishan-001/Kuddle-Task/blob/main/outputs/join-class.PNG">
+
+- If the class is full, the user is added to a `queue` and the error message and queue is displayed.
+
+<img src="https://github.com/Ishan-001/Kuddle-Task/blob/main/outputs/queue.PNG">
+
+## Note to recruiters:
+
+- I haven't made an extra class for `User` as we were allowed to use just names for the app functioning.
+- The code might feel less modular due to time constraint, otherwise I would have seperated the database operations from ``Book.java`` altogether.
+- I have used a simple array for storing the queue of users, could have used ``Queue`` data structure.
